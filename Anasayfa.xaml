@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPFSinema.Anasayfa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSinema"
+        mc:Ignorable="d"
+        Title="Anasayfa" Height="500" Width="800" Margin="0,0,0,0" Background="#FFD5D5D5" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Label Content="Sinema Otomasyon Sistemi" HorizontalAlignment="Center" VerticalAlignment="Top" Width="630" Height="90" FontFamily="Modern NO. 20" FontSize="55" FontWeight="Bold" Foreground="BurlyWood" Margin="20,50,0,0" ></Label>
+        <Button x:Name="btnfilms" Content="Filmler" FontFamily="Modern No. 20" Click="btnfilms_Click" Width="140" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130,250,0,0" Background="Bisque" FontSize="22" FontWeight="Bold" BorderThickness="3" BorderBrush="Chocolate"></Button>
+        <Button x:Name="btnseans" Content="Seanslar" FontFamily="Modern No. 20" Click="btnseans_Click" Width="140" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="340,250,0,0" Background="Bisque" FontSize="22" FontWeight="Bold" BorderThickness="3" BorderBrush="Chocolate"></Button>
+        <Button x:Name="btnsalon" Content="Salonlar" FontFamily="Modern No. 20" Click="btnsalon_Click" Width="140" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="550,250,0,0" Background="Bisque" FontSize="22" FontWeight="Bold" BorderThickness="3" BorderBrush="Chocolate"></Button>
+        <Button x:Name="btnbilet" Content="Bilet Kes" FontFamily="Modern No. 20" Click="btnbilet_Click" Width="140" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="340,350,0,0" Background="Bisque" FontSize="22" FontWeight="Bold" BorderThickness="3" BorderBrush="Chocolate"></Button>
+        <Image Source="Images\clapboard.png" Height="50" Width="50" HorizontalAlignment="Center" Margin="-400,-55,0,0"/>
+        <Image Source="Images\calendar.png" Height="50" Width="50" HorizontalAlignment="Center" Margin="20,-55,0,0"/>
+        <Image Source="Images\saloon-doors.png" Height="50" Width="50" HorizontalAlignment="Center" Margin="430,-40,0,0"/>
+        <Image Source="Images\ticket.png" Height="50" Width="50" HorizontalAlignment="Center" Margin="20,350,0,0"/>
+    </Grid>
+</Window>

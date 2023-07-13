@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFSinema.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSinema"
+        mc:Ignorable="d"
+        Title="Giris" Height="450" Width="800" Background="Bisque">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="27"/>
+            <ColumnDefinition Width="578*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="1" Content="Sinema Yönetim Otomasyonu" FontSize="50" FontWeight="Bold" HorizontalAlignment="Left"  Margin="98,30,0,0"  VerticalAlignment="Top" Height="62" Width="633" Grid.ColumnSpan="3" FontFamily="Modern No. 20" ></Label>
+        <Label Grid.Column="3" Content="Kullanıcı Adı:" FontSize="22" FontWeight="Bold" HorizontalAlignment="Left" Margin="16,133,0,0"  VerticalAlignment="Top" Height="35" Width="150" FontFamily="Modern No. 20"></Label>
+        <Label Grid.Column="3" Content="Sifre:" FontSize="22" FontWeight="Bold" HorizontalAlignment="Left" Margin="16,180,0,0"  VerticalAlignment="Top" Height="37" Width="90" FontFamily="Modern No. 20"></Label>
+        <TextBox x:Name="txtusername" Grid.Column="3" HorizontalAlignment="Left" Margin="165,135,0,0" VerticalAlignment="Top" Width="180" Height="35" ></TextBox>
+        <PasswordBox x:Name="txtpassword" Grid.Column="3" HorizontalAlignment="Left" Margin="165,185,0,0" VerticalAlignment="Top" Height="35" Width="180"></PasswordBox>
+        <Button Grid.Column="3" Content="Giris" HorizontalAlignment="Left" Margin="127,294,0,0" VerticalAlignment="Top" Height="35" Width="110" Name="Login" Click="Login_click" FontSize="22" Background="BurlyWood" FontWeight="Bold" FontFamily="Modern No. 20"></Button>
+        <Image Source="Images\cinema.png" Width="174" HorizontalAlignment="Left" Margin="21,13,0,-2" Grid.Column="1"/>
+    </Grid>
+</Window>

@@ -1,0 +1,55 @@
+﻿<Window x:Class="WPFSinema.BiletKesim"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSinema"
+        mc:Ignorable="d"
+        Title="BiletKesim" Height="571" Width="1061"  Background="Bisque" FontSize="22" FontFamily="Modern No. 20" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="77"/>
+            <RowDefinition Height="338"/>
+            <RowDefinition Height="85"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450"/>
+            <ColumnDefinition Width="550"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Label Content="Bilet Kesim" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="343,0,0,0" FontSize="55" FontWeight="Bold" Width="532"></Label>
+        </Grid>
+        <Grid Grid.Row="1" Margin="6,6,1,24">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="193*"/>
+                <ColumnDefinition Width="212*"/>
+                <ColumnDefinition Width="38*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <Label Content="Filmin Adı:" FontFamily="Modern No. 20" FontWeight="Bold" VerticalAlignment="Center" Height="34"></Label>
+            <Label Content="Filmin Türü:" Grid.Row="1" FontFamily="Modern No. 20" FontWeight="Bold" VerticalAlignment="Center" Height="34" ></Label>
+            <Label Content="Unvan:" Grid.Row="2" FontFamily="Modern No. 20" FontWeight="Bold" VerticalAlignment="Center" Height="34" ></Label>
+            <Label Content="Bilet Ücreti:" Grid.Row="3" FontFamily="Modern No. 20" FontWeight="Bold" VerticalAlignment="Center" Height="34" ></Label>
+            <Label Content="Film Süresi:" Grid.Row="4" FontFamily="Modern No. 20" FontWeight="Bold" VerticalAlignment="Center" Height="34" ></Label>
+            <TextBox x:Name="txtfilmad" HorizontalAlignment="Left" VerticalAlignment="Center" Width="250" Height="44" Grid.ColumnSpan="3" Margin="183,0,0,0"/>
+            <TextBox Grid.Row="1" x:Name="txttur" HorizontalAlignment="Left" VerticalAlignment="Center" Width="250" Height="44" Grid.ColumnSpan="3" Margin="183,0,0,0"/>
+            <TextBox Grid.Row="2" x:Name="txtunvan" HorizontalAlignment="Left" VerticalAlignment="Center" Width="250" Height="44" Grid.ColumnSpan="3" Margin="183,0,0,0"/>
+            <TextBox Grid.Row="3" x:Name="txtucret" HorizontalAlignment="Left" VerticalAlignment="Center" Width="250" Height="44" Grid.ColumnSpan="3" Margin="183,0,0,0"/>
+            <TextBox Grid.Row="4" x:Name="txtsüre" HorizontalAlignment="Left" VerticalAlignment="Center" Width="250" Height="44" Grid.ColumnSpan="3" Margin="183,0,0,0"/>
+        </Grid>
+        <Grid Grid.Column="1"/>
+        <Label Grid.Row="2" Content="ID:" Grid.Column="1" Margin="381,10,130,40" Name="ID"/>
+        <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Width="115" Margin="425,10,0,40" Name="TxtId"/>
+        <DataGrid Name="dgwbilet" Grid.Row="1" Grid.ColumnSpan="2" Margin="449,0,10,0" SelectionChanged="dgwbilet_SelectionChanged"/>
+        <Button Name="btnekle" Click="btnekle_Click" Grid.Row="2" Margin="10,10,327,31" Content="Ekle" FontWeight="Bold" Background="GreenYellow"  BorderThickness="2" BorderBrush="Chocolate"></Button>
+        <Button Name="btnsil" Click="btnsil_Click" Grid.Row="2" Margin="168,10,168,31" Content="Sil" FontWeight="Bold" Background="Red" BorderThickness="2" BorderBrush="Chocolate"></Button>
+        <Button Name="btnguncelle" Click="btnguncelle_Click" Grid.Row="2" Margin="327,10,10,31" Content="Güncelle" FontWeight="Bold" Background="Aqua" BorderThickness="2" BorderBrush="Chocolate"></Button>
+        <Button Name="btntemizle" Click="btntemizle_Click" Grid.Row="2" Margin="10,10,427,31" Content="Temizle" FontWeight="Bold" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Chocolate" Grid.Column="1"></Button>
+    </Grid>
+</Window>
